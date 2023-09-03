@@ -1,5 +1,7 @@
 # CodeX AFK System
 
+![SugarTank](https://github.com/5M-CodeX/codex-afk/assets/112611821/0713e7ee-9761-4894-b683-2069071097c5)
+
 ## Introduction
 
 This is a simple AFK (Away From Keyboard) kick system for FiveM servers. It monitors player activity and kicks players who are inactive for a certain duration.
