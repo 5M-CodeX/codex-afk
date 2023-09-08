@@ -1,7 +1,7 @@
 Config = {}
 
 -- Time settings
-Config.secondsUntilKick = 10 -- Adjust the time limit here
+Config.secondsUntilKick = 180 -- Adjust the time limit here
 Config.kickWarning = true -- Set to true to enable warnings
 Config.checkRate = 1000
 Config.AcePerm = "codex:nokick" -- ACE permission required to not get kicked for AFK
