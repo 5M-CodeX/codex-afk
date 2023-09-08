@@ -4,7 +4,7 @@ AddEventHandler("codexafk:afkkick", function(kickMessage)
     DropPlayer(playerSource, kickMessage)
 end)
 
-local pingLimit = 400
+local pingLimit = 1400
 
 RegisterServerEvent("codexafk:pingcheck")
 AddEventHandler("codexafk:pingcheck", function()

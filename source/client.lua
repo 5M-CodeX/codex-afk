@@ -19,8 +19,15 @@ Citizen.CreateThread(function()
 
                     time = time - 1
                 else
-                    if afkWarned then
-                        TriggerServerEvent("codexafk:afkkick", Config.messages.kickMessage)
+                    local playerSource = PlayerId()
+
+                    -- Check if the player has the required ACE permission
+                    if IsPlayerAceAllowed(playerSource, Config.AcePerm) then
+                        print("Player has the required ACE permission. Not kicking.")
+                    else
+                        if afkWarned then
+                            TriggerServerEvent("codexafk:afkkick", Config.messages.kickMessage)
+                        end
                     end
                 end
             else
@@ -35,6 +42,7 @@ Citizen.CreateThread(function()
         end
     end
 end)
+
 
 Citizen.CreateThread(function()
     while true do
